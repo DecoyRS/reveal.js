@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - Layout Helpers</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/night.css" id="theme">
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+            <section data-markdown data-separator="---">
+                <script type="text/template">
+                    ## Game Tools Developer
+                    Alexander Pirogov
+                </script>
+
+                <aside class="notes">
+                    Hello folks! And thank you 
+                </aside>
+            </section>
+            <section data-auto-animate>
+                <div class="r-vstack">
+                    <div class="r-hstack">
+                        <div class="r-vstack">
+                            <div class="r-hstack">
+                                <img src="220px-FIFA_14.jpeg" style="max-height: 200px;margin: 0.1em">
+                                <img src="2014_FIFA_World_Cup_Brazil_game.jpg" style="max-height: 200px;margin: 0.1em">
+                                <img src="FIFA_15_Cover_Art.jpg" style="max-height: 200px;margin: 0.1em">
+                            </div>
+                            <div style="font-size: 25px">UI/Gameplay Developer</div>
+                        </div>
+                        <div class="r-vstack fragment" >
+                            <img data-id="wows" src="World_of_Warships_cover_art.png" style="max-height: 200px;margin: 0.1em 1em">
+                            <div style="font-size: 25px">Tools Team Tech Lead</div>
+                        </div>
+                    </div>
+                    <div class="r-hstack">
+                        <div class="r-vstack fragment">
+                            <img src="FREE-Rainbow-Six-Siege-Holiday-Nighthaven-Packs.jpg" style="max-height: 200px;margin: 0.1em">
+                            <div style="font-size: 25px">Senior Engine/Tools Developer</div>
+                        </div>
+                        <div class="r-vstack fragment">
+                            <img src="inustice2mobile.jpg" style="max-height: 200px;margin: 0.1em">
+                            <div style="font-size: 25px">Team Lead</div>
+                        </div>
+                        <div class="r-vstack fragment">
+                            <img src="rider-with-backgr.svg" style="max-height: 200px;margin: 0.1em">
+                            <div style="font-size: 25px">Lead Developer/PMM</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    My game development experience spans over 7 to 8 years, working in outsourcing company on big AAA titles.
+                    It all started with FIFA series, a football simulator made by Electronic Arts company, I was lucky to be working on first FIFA game for the "NEXT GEN" consoles of those years, I'm talking PS4 and XBox One.
+                    Then I've switched to World of Warships, free-to-play wargame by Wargaming company, working on all kinds of tools that I'll go in detail later on.
+                    After that, Rainbow 6: Siege by Ubisoft, tools and engine side of the project.
+                    And my last game project was Injustice 2 Mobile, by NetherRealm, the same folks that's been making Mortal Kombat series.
+                    Last one was using Unreal Engine 4 and I hated it so much that I've decided to leave game development industry to work on tools for software developers, specifically targeting Unreal Engine 4.
+                </aside>
+            </section>
+            <section data-auto-animate>
+                <h2>Tools Examples </h2>
+                <div class="r-hstack">
+                    <img data-id="wows" src="World_of_Warships_cover_art.png" style="max-height: 400px;margin: 0.1em 1em">
+                    <ul>
+                        <li>Particle Editor</li>
+                        <li>World Editor</li>
+                        <li>Game Object Editor</li>
+                        <li>Game Object Validator</li>
+                        <li>Sound Editor</li>
+                        <li>... other editors</li>
+                        <li>And Patch Note Generator</li>
+                        
+                    </ul>
+                </div>
+                <aside class="notes">
+                    So, few words about tools.
+                    I've worked on all kinds of "editors", be it Sound Editor, Particle Editor, World Editor aka Map Editor and so on.
+                    Mind you that having that many editors is becoming part of the history. Nowadays, with beefy CPU's and affordable SSD's, loading times of different assets has become negligible.
+                </aside>
+            </section>
+            <section>                
+                <div class="r-hstack">
+                    <div class="r-vstack fragment">
+                        <img src="unreal.png" style="max-height: 400px;margin: 0.1em">
+                        <div>Unreal Engine</div>
+                    </div>
+                    <div class="r-vstack fragment">
+                        <img src="unity-editor-new-ui.jpg" style="max-height: 400px;margin: 0.1em">
+                        <div>Unity</div>
+                    </div>
+                </div>
+                <aside class="notes">
+                    That what brings us to most "on the hype" engines and editors available out there, Unreal Engine and Unity.
+                </aside>
+            </section>
+            <section style="text-align: left;"  data-auto-animate>
+                <div style="font-size: 40;" data-id="WhatIs">What is a Tools Engineer?</div>
+                <aside class="notes">
+                    A Tools Engineer is a software engineer that supports the development
+                    of the content and code for the development of the game (instead of the game itself).
+                    They work to improve the rate-of-change at which the game can be built,
+                    to improve the quality of the game, and enhance the user experience of creating the game.
+                    Engineers that gravitate toward tools development tend to want to:
+                </aside>
+            </section>
+            <section style="text-align: left;"  data-auto-animate>
+                <div  style="font-size: 40;" data-id="WhatIs">What is a Tools Engineer?</div>
+                <ul>
+                    <li>Analyze workflow</li>
+                    <li>Improve efficiency</li>
+                    <li>Monitor changes</li>
+                    <li>Share knowledge</li>
+                    <li>Help fellow game developers</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Analyze workflow and improve the usability of the tools that designers and artists use</li>
+                        <li>Improve the efficiency at which changes can be shown in the game</li>
+                        <li>Take measurements and communicate defects and inefficiencies in the game</li>
+                        <li>Support studio services that accelerate and supply information about the tools</li>
+                        <li>Improve the productivity of fellow engine and game engineers</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2>How would you get yourself into that?</h2>
+                <aside class="notes">
+                    Alright, so you feel that some of these descriptions fit your persona and you'd like to venture into the magic world of Game Tools Development.
+                    What you need to know to get a job a tools developer?
+                </aside>
+            </section>
+            <section>
+                <ul>
+                    <li>Masters in Computer Science</li>
+                    <li>6 months volunteer work for medical lab</li>
+                    <li>6 more months half time</li>
+                    <li>1 year at military facility</li>
+                    <li>1 year outsource for Intel</li>
+                    <li>Google Summer of Code (for bonus points)</li>
+                </ul>
+
+                <aside class="notes">
+                    This is a bare minimum that you need to get to start working on tools
+                </aside>
+            </section>
+            <section>
+                <h3 class="r-fit-text">Fake it till you make it</h3>
+
+                <aside class="notes">
+                    Joke aside, the most important thing is to pass interview.
+                    A sad joke that never gets old - the hardest tasks that you'll get in your job are the tasks at technical interview.
+                </aside>
+            </section>
+            <section>               
+                <h2>No, for real, how would you get yourself into that?</h2>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>Choose your starter</strong></div>
+                <ul>
+                    <li>Content Editing Workflow</li>
+                    <li>Content Build Pipeline</li>
+                    <li>Reliability & Infrastructure</li>
+                </ul>
+                <aside class="notes">
+                    As in every good role playing game, you need to pick your class.
+                    Here we have 3 options.
+                    Let's take a deeper look at each of them.
+                </aside>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>Content Editing Workflow</strong></div>
+                <ul>
+                    <li>User experience improvement</li>
+                    <li>User interface toolkits</li>
+                    <li>Document formats</li>
+                    <li>Revision control integration</li>
+                    <li>File system journaling</li>
+                    <li>Interprocess communication</li>
+                </ul>
+                <aside class="notes">   
+                    <div>Content editor work focuses on the traditional Windows desktop style application engineering. This development is two-fold:
+                        <ul>
+                            <li>Constant auditing and pursuing high quality and efficient user-experience of the content editing tools</li>
+                            <li>Improving the state of the underlying software architecture of those content editing tools</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>User experience auditing and content creator communication/feedback</li>
+                        <li>User interface toolkits (such as Qt, wxWidgets, WPF, WinForms, FLTK, IMGUI, etc…)</li>
+                        <li>Document formats (such as XML, JSON, YAML, etc…)</li>
+                        <li>Revision control integration (such as Perforce, Plastic SCM, etc…)</li>
+                        <li>File system watchers and document hot-reloading</li>
+                        <li>Interprocess communication and shared object synchronization</li>
+                    </ul>
+                </aside>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>Content Build Pipeline</strong></div>
+                <ul>
+                    <li>Build systems</li>
+                    <li>Dependency analysis</li>
+                    <li>Pipeline auditing</li>
+                    <li>Parallelism and concurrency</li>
+                    <li>Global optimization</li>
+                    <li>Determinism</li>
+                </ul>
+                <aside class="notes">  
+                    <div>Moving on to the next class, Content Build Pipeline</div>
+                    <div>Content build pipeline work focuses on the asset pipeline and all its data processing technology. The build pipeline is the collective noun for all of the tools that process data into the form that is loadable by the game (both the development version of the game as well as the final version that goes on the disc).</div>                         
+                    <ul>
+                        <li>Build systems (such as Make, MSBuild, Jam, FASTbuild, Ninja, etc…)</li>
+                        <li>Dependency analysis (modification time, checksum)</li>
+                        <li>Pipeline auditing for iteration throughoutput (caching build artifacts)</li>
+                        <li>Parallelism and concurrency (what can ran in parallel </li>
+                        <li>Global optimization</li>
+                        <li>Determinism (same inputs should provide same outputs)(example, baking time into artifacts can lead to degradation of pipeline time)</li>
+                    </ul>
+                </aside>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>Reliability & Infrastructure</strong></div>
+                <ul>
+                    <li>Continuous Integration</li>
+                    <li>Continuous Validation</li>
+                    <li>Computer Configuration-As-Code</li>
+                    <li>Telemetry Systems</li>
+                    <li>Data health monitoring</li>
+                </ul>
+                <aside class="notes">
+                    <div>Last but not least, Reliability & Infrastructure</div>  
+                    <div>Reliability work focuses on studio services that support all engineering, content creation, and the at-large process of facilitating change over the course of production.</div>                         
+                    
+                    <ul>
+                        <li>Continuous Integration (in its traditional definition: the folding of changes against each other for early detection of integration test failure)</li>
+                        <li>Continuous Validation (automatic validation as change commences within revision control)</li>
+                        <li>Computer Configuration-As-Code (such as Puppet, Ansible, etc…)</li>
+                        <li>Implementing and honing the reporting of the telemetry implementation within the studio</li>
+                        <li>Health monitoring and data corroboration of key services like caching servers (CIFS, Redis, memcachd, etc…) as well as distributed build systems (SN-DBS, IncrediBuild, etc…)</li>
+                    </ul>
+                </aside>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>Choose your starter</strong></div>
+                <ul>
+                    <li>Content Editing Workflow</li>
+                    <li>Content Build Pipeline</li>
+                    <li>Reliability & Infrastructure</li>
+                </ul>
+                <aside class="notes">
+                    And as in every good RPG, you can mix your classes after getting to certain level.
+                    Mixing and matching different specialties, bringing Reliability into Build Pipeline, integrating Editing Workflow into Build Pipeline, the sky is the limit.
+                    Personally, I feel that I've actually started to study real hard *after* I've graduated from university.
+                    CS world changes every single day and "It takes all the running you can do to keep in the same place".
+                </aside>
+            </section>
+            <section>
+                <div>UX is <strong>KING</strong></div>
+                <aside class="notes">
+                    Now, I've talked a lot about CS skills, like programming and all kinds of technologies that's good to have in your pocket.
+                    But what's being looked over quite often is User Experience. It's not enough to make your tools work.
+                    It's equally (and some times even more important) to make them work beautifully and non-intrusively.
+                </aside>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>Maslow Pyramide for Tools</strong></div>
+                <ul>
+                    <li>Useful</li>
+                    <li>Usable</li>
+                    <li>Desirable</li>
+                </ul>
+                <aside class="notes">
+                    And what I mean by that. Let's have a look at Maslow Pyramide for Tools.
+                    You can create a console utility that takes an image from Photoshop and converts it into texture in your game engine.
+                    Is it useful? Absolutely.
+                    Is it usable? Barely. For CI pipeline and server-side tasks it's perfect, but what about artists that need to check their work in game real quick?
+                    They need to run some funky console tool to export, make sure in the process they haven't messed up parameters for the utility and prey for gods that their work is picked up by the game.
+                    Alright. Next step is UI wrapper, with checkboxes and input fields that can check if inputs are correct and users don't need to memorize all the options, they are available at glance.
+                    Is it usable? Of course. But is it desirable?
+                    Artists spend decades mastering their tools, learning by heart all the key combos for manipulating assets,
+                    using tablets instead of mouse to be as productive as possible and now they need to shift their precious attention to some random unknown tool to get it into the game?
+                    How can we improve on this process?
+                    We cam make a plugin to Photoshop that will add an action to launch a conversion utility on file and will fire up the game with new assets, so artists don't need to do anything outside of their comfort zone.
+                    All the info they need are at the flick of a key.
+                </aside>
+            </section>
+            <section style="text-align: left;">
+                <div><strong>UX where to start</strong></div>
+                <ul>
+                    <li>Perceived Performance</li>
+                    <li>Designing the User Experience of Game Development Tools</li>
+                </ul>
+            </section>
+            <section style="text-align: left;">
+                <div>References</div>
+                <ul>
+                    <li><a href="http://thetoolsmiths.org/">Tools Developer community</a></li>
+                    <li><a href="https://gorlak.dev/recruiting/2018/07/13/tools-engineer-faq">Infinity Ward Tools Engineering Recrutinq FAQ</a></li>
+                    <li><a href="https://www.amazon.com/Designing-User-Experience-Development-Tools/dp/1138427632">Designing the User Experience of Game Development Tools</a></li>
+                    <li><a href="https://github.com/ocornut/imgui">Dear Imgui Framework</a></li>
+                    <li>Twitter <a href="https://twitter.com/Pie_daddy">@Pie_Daddy</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/zoom/zoom.js"></script>
+    <script src="../plugin/search/search.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: 'c/t',
+
+            plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+        });
+    </script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="node_modules/reveal-notes-server/client.js"></script>
+</body>
+
+</html>
